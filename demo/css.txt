@@ -1,0 +1,11 @@
+#zip-kit-demo {
+  box-sizing: border-box;
+  width: fit-content;
+  max-width: 100%;
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: #5838c7;
+  color: white;
+  font: 600 16px/1.4 system-ui, sans-serif;
+  overflow-wrap: anywhere;
+}

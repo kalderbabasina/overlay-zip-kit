@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Overlay ZIP Kit",
+  "version": "1.6.0",
+  "description": "Import and export Custom Widgets as ZIP files in the StreamElements overlay editor.",
+  "minimum_chrome_version": "111",
+  "homepage_url": "https://github.com/kalderbabasina/overlay-zip-kit",
+  "action": {
+    "default_title": "Overlay ZIP Kit",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://streamelements.com/overlay/*/editor*"],
+      "run_at": "document_start",
+      "world": "MAIN",
+      "js": ["vendor/jszip.min.js", "editor.js"],
+      "css": ["editor.css"]
+    }
+  ]
+}

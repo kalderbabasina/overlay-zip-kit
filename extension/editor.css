@@ -1,0 +1,90 @@
+#widgetio-local {
+  position: fixed;
+  right: 20px;
+  bottom: 66px;
+  z-index: 100;
+  display: grid;
+  justify-items: end;
+  gap: 8px;
+  text-align: right;
+  font: 14px/1.4 system-ui, sans-serif;
+  color: #f6f4f8;
+  color-scheme: dark;
+}
+
+#widgetio-local-panel {
+  box-sizing: border-box;
+  width: min(340px, calc(100vw - 40px));
+  max-height: calc(100dvh - 128px);
+  min-height: 0;
+  overflow: auto;
+  padding: 14px;
+  background: #24222b;
+  border: 1px solid #514a5d;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px #100b1d38;
+  text-align: left;
+}
+
+#widgetio-local [hidden] { display: none; }
+
+#widgetio-local button,
+#widgetio-local input::file-selector-button {
+  padding: 6px 10px;
+  font: inherit;
+  font-weight: 600;
+  color: white;
+  background: #393443;
+  border: 1px solid #645c73;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#widgetio-local [data-toggle],
+#widgetio-local [data-import] {
+  background: #ac2250;
+  border-color: #d65b83;
+}
+
+#widgetio-local button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+#widgetio-local :is(button, input, summary):focus-visible {
+  outline: 2px solid #ffadd0;
+  outline-offset: 2px;
+}
+
+#widgetio-local label {
+  display: block;
+  font: inherit;
+  font-weight: 600;
+}
+
+#widgetio-local input[type="file"] {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 5px 0 10px;
+  font: inherit;
+  color: #e0d7e9;
+}
+
+#widgetio-local input::file-selector-button { margin-right: 8px; }
+#widgetio-local details { margin: 0 0 12px; }
+#widgetio-local summary { cursor: pointer; }
+
+#widgetio-local .widgetio-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+#widgetio-local [role="status"] {
+  margin: 10px 0 0;
+  padding: 8px;
+  border-radius: 6px;
+  background: #332d3b;
+  overflow-wrap: anywhere;
+}

@@ -1,0 +1,7 @@
+{
+  "label": {
+    "type": "text",
+    "label": "Label",
+    "value": "Overlay ZIP Kit · Demo"
+  }
+}

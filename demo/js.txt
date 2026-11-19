@@ -1,0 +1,6 @@
+window.addEventListener("onWidgetLoad", ({ detail }) => {
+  const label = detail?.fieldData?.label;
+  if (typeof label === "string" && label.trim()) {
+    document.querySelector("#zip-kit-demo").textContent = label;
+  }
+});
